@@ -1,0 +1,35 @@
+  
+  /* ============================================= */
+  /*              Buttons                          */
+  /* ============================================= */
+  
+  .btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $hover-color;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .default {
+    background-color: $link-color;
+  }
+  
+  .error {
+    background-color: nth($column-colors, 9);
+  }
+  
+  .info {
+    background-color: nth($column-colors, 1);
+  }
+  
+  .success {
+    background-color: nth($column-colors, 10);
+  }
+  
+  .warning {
+    background-color: nth($column-colors, 8);
+  }
+  
