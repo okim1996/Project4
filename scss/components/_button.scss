@@ -1,0 +1,69 @@
+  
+  /* ============================================= */
+  /*              Buttons                          */
+  /* ============================================= */
+  
+  .btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $hover-color;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .default {
+    background-color: $link-color;
+  }
+
+  .default:hover {
+    transition: all, 1s;
+    background-color: lighten($link-color, 15%);
+  }
+  
+  .error {
+    background-color: nth($column-colors, 9);
+  }
+
+  .error:hover {
+    transition: 1s;
+    background-color: lighten(nth($column-colors, 9), 15%);
+  }
+  
+  .info {
+    background-color: nth($column-colors, 1);
+  }
+
+  .info:hover {
+    transition: 1s;
+    background-color: lighten(nth($column-colors, 1), 15%);
+  }
+  
+  .success {
+    background-color: nth($column-colors, 10);
+  }
+
+  .success:hover {
+    transition: 1s;
+    background-color: lighten(nth($column-colors, 10), 15%);
+  }
+  
+  .warning {
+    background-color: nth($column-colors, 8);
+  }
+
+  .warning:hover {
+    transition: 1s;
+    background-color: lighten(nth($column-colors, 8), 15%);
+  }
+  
+  @include breakpoint-768($breakpoint) {
+    .btn {
+      padding: 10px 30px;
+    }
+    
+    .btn + .btn {
+      margin-left: 10px;
+    }
+  }
